@@ -61,4 +61,9 @@ public class Helper {
     public void addTestStep(String step){
         System.out.println(step);
     }
+
+    @AfterTest
+    public void closeBrowser(){
+        driver.quit();
+    }
 }
